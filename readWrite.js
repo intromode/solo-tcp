@@ -10,3 +10,7 @@ const ws = fs.createWriteStream('./2_tcp-copy.md');
 rs.on('data', data => {
   ws.write(data);
 })
+
+rs.on('end', () => {
+  ws.end();
+});
