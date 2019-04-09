@@ -14,3 +14,4 @@ rs.on('data', data => {
 rs.on('end', () => {
   ws.end();
 });
+//not totally neccesary here but when you have bigger applications if you dont put it you might have a data leak
