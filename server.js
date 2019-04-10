@@ -1,4 +1,3 @@
-//every client is a socket 
 
 const net = require('net');
 
